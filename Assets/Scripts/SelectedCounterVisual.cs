@@ -16,12 +16,10 @@ public class SelectedCounterVisual : MonoBehaviour
     {
         if (e.selectedCounter == baseCounter)
         {
-            Debug.Log("Found it");
             Show();
         }
         else
         {
-            Debug.Log("Not Found");
             Hide();
         }
     }

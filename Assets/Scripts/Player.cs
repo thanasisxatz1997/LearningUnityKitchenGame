@@ -14,7 +14,7 @@ public class Player : MonoBehaviour,IKitchenObjectParent
         public BaseCounter selectedCounter;
     }
 
-    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 8f;
     [SerializeField] private GameInput gameInput;
     [SerializeField] private LayerMask countersLayerMask;
     [SerializeField] private Transform kitchenObjectHoldPoint;
@@ -139,7 +139,6 @@ public class Player : MonoBehaviour,IKitchenObjectParent
 
         float rotationSpeed = 10f;
         transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotationSpeed);
-        Debug.Log(inputVector);
     }
     private void SetSelectedCounter(BaseCounter selectedCounter)
     {
